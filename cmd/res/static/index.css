@@ -1,0 +1,196 @@
+body {
+    font-family: Microsoft YaHei, Helvetica, Meiryo UI, Malgun Gothic, Segoe UI, Trebuchet MS, Monaco, monospace, Tahoma, STXihei, "\534E\6587\7EC6\9ED1", STHeiti, Helvetica Neue, Droid Sans, wenquanyi micro hei, FreeSans, Arimo, Arial, SimSun, "\5B8B\4F53", Heiti, "\9ED1\4F53", sans-serif;
+    font-size: 1rem;
+    line-height: 170%;
+    max-width: 45em;
+    margin: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+    color: #333;
+    background: white;
+    text-rendering: optimizeLegibility;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 125%;
+        text-rendering: auto;
+    }
+}
+
+a {
+    color: #a08941;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c6b754;
+    text-decoration: underline;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a {
+    text-decoration: none;
+    color: #333;
+    break-after: avoid;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    color: #333;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 1.1em;
+}
+
+h4, h5 {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 0.9em;
+}
+
+pre {
+    background-color: rgb(240, 240, 240);
+    color: #111111;
+    padding: 0.5em;
+    overflow: auto;
+}
+
+code, pre {
+    font-family: Consolas, "PT Mono", monospace;
+}
+
+pre {
+    font-size: 90%;
+}
+
+hr {
+    color: lightgray;
+}
+
+dt code {
+    font-weight: bold;
+}
+
+dd p {
+    margin-top: 0;
+}
+
+blockquote {
+    border-left: thick solid lightgrey;
+    color: #111111;
+    padding: 0 0.5em;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%
+}
+
+table, td, th {
+    border: thin solid lightgrey;
+    border-collapse: collapse;
+    vertical-align: middle;
+}
+
+td, th {
+    padding: 0.2em 0.5em
+}
+
+tr:nth-child(even) {
+    background-color: rgba(200, 200, 200, 0.2)
+}
+
+nav#toc {
+    margin: 1em 0 1em 0
+}
+
+nav#toc summary {
+    font-weight: bold;
+    color: #333
+}
+
+nav#toc ul:after {
+    content: "\2042";
+    text-align: center;
+    display: block;
+    color: #333;
+}
+
+nav#toc ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 0
+}
+
+nav#toc ul li.h2 {
+    padding-left: 1em
+}
+
+nav#toc ul li.h3 {
+    padding-left: 2em
+}
+
+nav#toc ul li.h4 {
+    padding-left: 3em
+}
+
+nav#toc ul li.h5 {
+    padding-left: 4em
+}
+
+nav#toc ul li.h6 {
+    padding-left: 5em
+}
+
+nav#site {
+    font-size: 90%;
+    text-align: right;
+    padding: .5em;
+    border-bottom: 1px solid #333;
+}
+
+nav#site a:before {
+    content: "\2767\0020"
+}
+
+footer summary {
+    font-weight: bold;
+    color: #333
+}
+
+summary {
+    cursor: pointer;
+    outline: none
+}
+
+summary:only-child {
+    display: none
+}
+
+@media print {
+    nav {
+        display: none
+    }
+
+    pre {
+        overflow-wrap: break-word;
+        white-space: pre-wrap
+    }
+}
